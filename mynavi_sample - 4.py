@@ -63,19 +63,19 @@ def main():
     print(len(elem_characteristics))
     print(len(elem_contents))
     for elem_name,elem_characteristic,elem_content in zip(elem_names,elem_characteristics,elem_contents):
-        exp_elem_name_list = [elem_name.text,elem_characteristic.text,elem_content.text]
-        exp_elem_name_list.append(elem_name.text) 
-        exp_elem_name_list.append(elem_characteristic.text)
-        exp_elem_name_list.append(elem_content.text)   
-        print(exp_elem_name_list[0])    
+           print(elem_name.text)
 
-                                
-                            
+    elem_name_list=[]
+    elem_name_list.append[elem_name.text]
+    elem_characteristic_list=[]                            
+    elem_characteristic_list.append[elem_characteristic.text]
+    elem_content_list=[]
+    elem_content.append[elem_content.text]                       
     
     df = pd.DataFrame({
-        '会社名':[exp_elem_name_list[0]],
-        '特徴':[exp_elem_name_list[1]],
-        '内容':[exp_elem_name_list[2]]}
+        '会社名':elem_name_list,
+        '特徴':elem_characteristic_list,
+        '内容':elem_content_list}
     )
 
     
